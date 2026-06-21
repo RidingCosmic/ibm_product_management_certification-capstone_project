@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Story Document — Solar-R-Us Case Study</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<header class="doc-hero">
+  <div class="doc-hero-inner">
+    <a class="back-link" href="../index.html">← Back to case study</a>
+    <span class="eyebrow">Document 03</span>
+    <h1>User Story Document</h1>
+    <p class="lede">Solar-R-Us (SRU) LLC — Commercial &amp; Residential App and Console. Part I: user stories by role, need, and value, each with acceptance criteria.</p>
+    <div class="doc-meta">
+      <span class="badge">11 stories</span>
+      <span class="badge">6 epics</span>
+      <span class="badge">Plan Phase</span>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+<section class="wrap" style="padding-top:60px;">
+
+  <div class="voice">
+    <span class="voice-label">In my own words</span>
+    This part took longer than I expected. It's easy to write a story. It's harder to write acceptance criteria that actually mean something and aren't just restating the story back to you.
+  </div>
+
+  <p style="margin-top:24px;">Stories below are organized by functional epic and sourced from the documented commercial and residential app/console requirements gathered during focus group sessions with management and prospective buyers.</p>
+
+  <!-- EPIC 1 -->
+  <div class="section-head" style="margin-top:44px;">
+    <span class="section-num">Epic 1</span>
+    <h3 class="doc-h2">Real-Time System Monitoring (Commercial App)</h3>
+  </div>
+
+  <div class="story-block">
+    <span class="story-id">US-01</span>
+    <p class="story-sentence">As a <b>commercial customer</b>, I want <b>to monitor system efficiency in real time through the app</b>, so that <b>I can confirm the system is performing as expected and identify issues early</b>.</p>
+    <span class="ac-label">Acceptance Criteria</span>
+    <ul class="plain">
+      <li>App displays live efficiency metrics for the installed solar water heating system.</li>
+      <li>Data refreshes in real time, not on a manual-refresh-only basis.</li>
+      <li>Metrics are viewable on both Apple and Android devices.</li>
+      <li>User must have an installed system linked to the app to access this feature.</li>
+    </ul>
+  </div>
+
+  <div class="story-block">
+    <span class="story-id">US-02</span>
+    <p class="story-sentence">As a <b>commercial customer</b>, I want <b>to receive real-time fault indicators when something goes wrong with my system</b>, so that <b>I can respond quickly and avoid extended downtime or service disruption</b>.</p>
+    <span class="ac-label">Acceptance Criteria</span>
+    <ul class="plain">
+      <li>App pushes a fault notification within real-time monitoring windows when an issue is detected.</li>
+      <li>Fault indicator includes a description of the issue type.</li>
+      <li>Indicator links directly to troubleshooting and diagnostic reports.</li>
+      <li>False-fault rate does not undermine user trust in the notification (no excessive false alerts).</li>
+    </ul>
+  </div>
+
+  <div class="story-block">
+    <span class="story-id">US-03</span>
+    <p class="story-sentence">As a <b>commercial customer</b>, I want <b>to access diagnostic reports and automated fault eradication through the app</b>, so that <b>I can resolve common issues without waiting for a technician visit</b>.</p>
+    <span class="ac-label">Acceptance Criteria</span>
+    <ul class="plain">
+      <li>Diagnostic report is generated automatically when a fault is flagged.</li>
+      <li>App attempts automated fault eradication where the issue is software-resolvable.</li>
+      <li>If automated resolution fails, the app provides clear next-step guidance.</li>
+      <li>User can view a history of past faults and resolutions.</li>
+    </ul>
+  </div>
+
+  <div class="story-block">
+    <span class="story-id">US-04</span>
+    <p class="story-sentence">As a <b>commercial customer</b>, I want <b>to configure my system settings remotely through the app</b>, so that <b>I can adjust the system to meet changing environmental conditions without an on-site visit</b>.</p>
+    <span class="ac-label">Acceptance Criteria</span>
+    <ul class="plain">
+      <li>App allows remote adjustment of relevant system configuration parameters.</li>
+      <li>Configuration changes are confirmed back to the user once applied.</li>
+      <li>Invalid configuration attempts are rejected with a clear error message.</li>
+      <li>Configuration changes are logged for later reference.</li>
+    </ul>
+  </div>
+
+  <!-- EPIC 2 -->
+  <div class="section-head" style="margin-top:44px;">
+    <span class="section-num">Epic 2</span>
+    <h3 class="doc-h2">Residential Console</h3>
+  </div>
+
+  <div class="story-block">
+    <span class="story-id">US-05</span>
+    <p class="story-sentence">As a <b>residential customer</b>, I want <b>a standard console linked to my system to monitor and adjust operations and outputs</b>, so that <b>I can manage my home solar water heating system without needing the full mobile app</b>.</p>
+    <span class="ac-label">Acceptance Criteria</span>
+    <ul class="plain">
+      <li>Console displays current system status, output, and key operational metrics.</li>
+      <li>Console allows manual adjustment of system operations.</li>
+      <li>Console connects to the system wirelessly with no hard connections required.</li>
+      <li>Console is mobile and can be relocated within range of the system.</li>
+    </ul>
+  </div>
+
+  <div class="story-block">
+    <span class="story-id">US-06</span>
+    <p class="story-sentence">As a <b>residential customer</b>, I want <b>the console to automatically detect optimal solar collection settings and adjust positioning accordingly</b>, so that <b>I get the best system performance without having to manually calculate optimal settings</b>.</p>
+    <span class="ac-label">Acceptance Criteria</span>
+    <ul class="plain">
+      <li>Console automatically detects current environmental/weather conditions relevant to solar collection.</li>
+      <li>Console adjusts collector positioning settings automatically based on detected conditions.</li>
+      <li>User can override automatic adjustments manually if desired.</li>
+      <li>User is notified when an automatic adjustment is made.</li>
+    </ul>
+  </div>
+
+  <!-- EPIC 3 -->
+  <div class="section-head" style="margin-top:44px;">
+    <span class="section-num">Epic 3</span>
+    <h3 class="doc-h2">Support and Help Desk Access</h3>
+  </div>
+
+  <div class="story-block">
+    <span class="story-id">US-07</span>
+    <p class="story-sentence">As a <b>commercial or residential customer</b>, I want <b>the app to link directly to a 24/7 help desk function</b>, so that <b>I can get help immediately when I run into a problem, regardless of time of day</b>.</p>
+    <span class="ac-label">Acceptance Criteria</span>
+    <ul class="plain">
+      <li>Help desk link is accessible from the main app screen at all times.</li>
+      <li>Help desk function is available 24 hours a day, 7 days a week, prior to product launch.</li>
+      <li>Connection method (chat, call, or ticket) is clearly presented to the user.</li>
+    </ul>
+  </div>
+
+  <div class="story-block">
+    <span class="story-id">US-08</span>
+    <p class="story-sentence">As a <b>commercial or residential customer</b>, I want <b>a built-in troubleshooting guide and frequently asked questions section in the app</b>, so that <b>I can try to resolve simple issues myself before contacting support</b>.</p>
+    <span class="ac-label">Acceptance Criteria</span>
+    <ul class="plain">
+      <li>Troubleshooting guide is accessible from the app's help section.</li>
+      <li>FAQ covers common system and app issues identified during beta testing.</li>
+      <li>Guide content is searchable or organized by topic for quick lookup.</li>
+    </ul>
+  </div>
+
+  <!-- EPIC 4 -->
+  <div class="section-head" style="margin-top:44px;">
+    <span class="section-num">Epic 4</span>
+    <h3 class="doc-h2">Data and Diagnostics for Product Management</h3>
+  </div>
+
+  <div class="story-block">
+    <span class="story-id">US-09</span>
+    <p class="story-sentence">As the <b>SRU product management team</b>, I want <b>to track app users, issues, and diagnostic information</b>, so that <b>I can determine system upgrade requirements, manage sustainability costs, and fine-tune marketing efforts</b>.</p>
+    <span class="ac-label">Acceptance Criteria</span>
+    <ul class="plain">
+      <li>App captures anonymized usage data including active users and reported issues.</li>
+      <li>Diagnostic information from user systems is logged centrally for analysis.</li>
+      <li>Data is available in a reportable format for the product management team.</li>
+      <li>Data collection complies with user privacy and security requirements (see US-10).</li>
+    </ul>
+  </div>
+
+  <!-- EPIC 5 -->
+  <div class="section-head" style="margin-top:44px;">
+    <span class="section-num">Epic 5</span>
+    <h3 class="doc-h2">Security and Privacy</h3>
+  </div>
+
+  <div class="story-block">
+    <span class="story-id">US-10</span>
+    <p class="story-sentence">As a <b>commercial or residential customer</b>, I want <b>assurance that my information is secure and not shared with third parties</b>, so that <b>I can trust the app with my personal and system data</b>.</p>
+    <span class="ac-label">Acceptance Criteria</span>
+    <ul class="plain">
+      <li>App does not share user information with third parties without explicit consent.</li>
+      <li>User data is encrypted in transit and at rest.</li>
+      <li>App includes a clear, accessible privacy statement covering data use.</li>
+      <li>Security requirement applies equally to both commercial and residential app versions.</li>
+    </ul>
+  </div>
+
+  <!-- EPIC 6 -->
+  <div class="section-head" style="margin-top:44px;">
+    <span class="section-num">Epic 6</span>
+    <h3 class="doc-h2">Cross-Platform Access</h3>
+  </div>
+
+  <div class="story-block">
+    <span class="story-id">US-11</span>
+    <p class="story-sentence">As a <b>commercial or residential customer</b>, I want <b>an app available on both Apple and Android, free to download</b>, so that <b>I can use the app regardless of which mobile device I own, with no added cost</b>.</p>
+    <span class="ac-label">Acceptance Criteria</span>
+    <ul class="plain">
+      <li>App is published and functional on both the Apple App Store and Google Play.</li>
+      <li>App is free to download for all buyers and users.</li>
+      <li>User must have an installed system to access in-app features, consistent across both platforms.</li>
+      <li>Core functionality (monitoring, faults, configuration) is at parity across both platforms.</li>
+    </ul>
+  </div>
+
+  <div class="voice" style="margin-top:32px;">
+    <span class="voice-label">In my own words</span>
+    If I had to pick the most important story on this list, it's US-10. Security tends to get treated as a checkbox at the end, but for a product collecting real-time system data from someone's home or business, it has to be a first-class requirement, not an afterthought.
+  </div>
+
+</section>
+
+<div class="horizon-wrap"><div class="horizon"></div></div>
+
+<nav class="doc-nav" style="padding-bottom:60px;">
+  <a href="vision.html">← Back: Product Vision Document</a>
+  <a href="beta-plan.html">Next: Beta Plan →</a>
+</nav>
+
+</main>
+
+<footer>
+  <p>Solar-R-Us case study — Coursera Product Management Specialization, Capstone Project. Company and product are fictional course material; documentation and analysis are my own work.</p>
+</footer>
+
+</body>
+</html>
